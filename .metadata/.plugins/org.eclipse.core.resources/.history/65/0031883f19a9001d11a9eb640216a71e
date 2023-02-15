@@ -1,5 +1,0 @@
-package com.lcwd.hotel.services.exception;
-
-public class ResourceNotFoundException {
-
-}

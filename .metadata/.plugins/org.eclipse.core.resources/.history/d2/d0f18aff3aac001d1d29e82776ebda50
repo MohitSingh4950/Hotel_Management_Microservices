@@ -1,5 +1,0 @@
-package com.lcwd.user.service.interceptor;
-
-public class FeignClientInterceptor {
-
-}

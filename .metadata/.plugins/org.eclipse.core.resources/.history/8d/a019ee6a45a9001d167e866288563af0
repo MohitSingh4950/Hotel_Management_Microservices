@@ -1,7 +1,0 @@
-server.port=8082
-spring.jpa.show-sql=true
-spring.datasource.url=jdbc:postgresql://localhost:5432/microservice
-spring.datasource.username=postgres
-spring.datasource.password=admin
-spring.jpa.hibernate.ddl-auto=update
-spring.jpa.properties.hibernate.dialect = org.hibernate.dialect.PostgreSQLDialect

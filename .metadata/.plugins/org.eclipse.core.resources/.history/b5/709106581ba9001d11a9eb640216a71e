@@ -1,5 +1,0 @@
-package com.lcwd.hotel.exception;
-
-public class GlobalExceptionHandler {
-
-}
