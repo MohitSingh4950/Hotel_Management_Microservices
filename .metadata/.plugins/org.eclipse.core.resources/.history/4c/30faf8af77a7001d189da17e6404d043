@@ -1,0 +1,15 @@
+package com.lcwd.user.service.services;
+
+public class UserService {
+
+	//User operations
+	
+	//create
+	
+	User saveUser(User user);
+	
+	//get all user
+	List<User> getAllUser();
+	
+	//get single user of
+}

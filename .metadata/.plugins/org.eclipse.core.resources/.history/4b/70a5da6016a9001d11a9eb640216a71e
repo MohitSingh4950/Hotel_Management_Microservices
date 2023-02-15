@@ -1,0 +1,5 @@
+package com.lcwd.hotel.entities;
+
+public class Hotel {
+
+}

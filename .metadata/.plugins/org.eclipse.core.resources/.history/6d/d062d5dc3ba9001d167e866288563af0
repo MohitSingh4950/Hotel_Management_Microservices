@@ -1,0 +1,5 @@
+package com.lcwd.rating.repositories;
+
+public class RatingRepository {
+
+}

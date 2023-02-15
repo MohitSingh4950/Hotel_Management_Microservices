@@ -1,0 +1,11 @@
+spring.jpa.show-sql=true
+
+server.port=8081
+
+spring.datasource.url=jdbc:mysql://localhost:3306/microservices
+
+spring.datasource.driverClassName=com.mysql.cj.jdbc.Driver
+
+spring.datasource.username=root
+
+spring.datasource.password=admin

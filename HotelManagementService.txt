@@ -1,0 +1,54 @@
+Microservices Architechture
+
+Hotel Service ==>Postgress
+Rating Service ==> MongoDB
+User Service ==> MySQL
+Client(Postman)
+suppose client is sending 50 urls
+Then it is not a good idea 50services : 50urls
+will make api gateway, which will make a call to all other services
+
+Request ==>(API GATEWAY) <---> User Service ==> Rating Service == >Hotel Service
+																		||
+							(Config server <==>Github					||
+Response <==============================================================||
+
+Feign Client
+
+* the feign is a declarative HTTP web client developed by Netflix.
+HttpRequest same as RestTemplate
+need to create interface and with the help of annotation need to declare
+
+Config Server
+
+it provides client-server archietecture. with this server we can extetnalize
+ our local server configuration to a distributed system. take it out server or make live
+				
+				|------------> User Service
+				|					|
+Client ==> API Gateway......  Rating Service
+				|					|
+				|............  Hotel Service
+Fault Tolerance --
+If any service is down, then fault tolerance is better solution then try/catch
+Here we can use circuit breaker
+
+Rate Limiter
+This functionality allows limiting access to some service.
+Rate Limiter make services highly avaialble by limiting the number of calls 
+we could process in specific windows.
+1)security  2)performance we are using rate limiter
+DOS attack -> in this in our ackend service lot's of request are done
+with this rate limiting can be done. R.L pattern we can save our backend
+100 of request can we capable of handling the request
+1 client can do only 2 request in 1sec. if he tries to do more then 2 request
+in 1 sec, then it will cause issue/failure.
+it provide high scalability and availability
+
+Security (OKTA)
+JWT is stateless, as all work is written in client code, not in server
+OKTA is 3rd party service
+OAuth -> Authorization + Authentication
+
+
+http://localhost:8084/login/oauth2/code/okta
